@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8YBvLFneAB2MkhOcU/WcHeacYfAjKN9jG+odf4zBs+Y=",
+  "Source": "FarmacyAPI",
+  "BasePath": "_content/FarmacyAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

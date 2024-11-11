@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo Alert</title>
+    <style>
+        .alert-box {
+            position: fixed;
+            top: 50px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showAlert()">Show Alert</button>
+
+    <script>
+    function showAlert() {
+      var alertBox = document.createElement('div');
+      alertBox.className = 'alert-box';
+
+      var textMessage = document.createElement('p');
+      textMessage.textContent = 'This is a demo alert!';
+      textMessage.style.margin = '0';
+
+      var closeButton = document.createElement('button');
+      closeButton.innerHTML = 'Close';
+      closeButton.style.position = 'absolute';
+      closeButton.style.top = '10px';
+      closeButton.style.right = '10px';
+      closeButton.style.backgroundColor = '#ccc';
+      closeButton.style.border = 'none';
+      closeButton.style.padding = '5px 10px';
+      closeButton.style.cursor = 'pointer';
+      closeButton.onclick = function() {
+        alertBox.remove();
+      };
+
+      alertBox.appendChild(textMessage);
+      alertBox.appendChild(closeButton);
+      document.body.appendChild(alertBox);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,823 @@
+[
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "AddMed",
+    "RelativePath": "api/Farmacy/AddMedication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "med",
+        "Type": "FarmacyAPI.Models.Medication",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "AddTask",
+    "RelativePath": "api/Farmacy/AddTask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "task",
+        "Type": "FarmacyAPI.Models.Task",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "AllocateMeds",
+    "RelativePath": "api/Farmacy/AllocateMeds",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "task",
+        "Type": "FarmacyAPI.Models.MedAllo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "AllocateTask",
+    "RelativePath": "api/Farmacy/AllocateTask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "task",
+        "Type": "FarmacyAPI.Models.TaskAllo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "EditAnimal",
+    "RelativePath": "api/Farmacy/EditAnimal/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "animal",
+        "Type": "FarmacyAPI.Models.Animal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "EditMeds",
+    "RelativePath": "api/Farmacy/EditMedication/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "task",
+        "Type": "FarmacyAPI.Models.Medication",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "EditTask",
+    "RelativePath": "api/Farmacy/EditTask/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "task",
+        "Type": "FarmacyAPI.Models.Task",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "EditVisit",
+    "RelativePath": "api/Farmacy/EditVisit/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "visits",
+        "Type": "FarmacyAPI.Models.VetVisits",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "EditWorker",
+    "RelativePath": "api/Farmacy/EditWorker/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "worker",
+        "Type": "FarmacyAPI.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetMeds",
+    "RelativePath": "api/Farmacy/GetAllocatedMed",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.Medication, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetAllocatedMed",
+    "RelativePath": "api/Farmacy/GetAllocatedMeds",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.MedAllo, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetTasks",
+    "RelativePath": "api/Farmacy/GetAllocatedTask",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.Task, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetAllocatedTask",
+    "RelativePath": "api/Farmacy/GetAllocatedTasks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.TaskAllo, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetAnimal",
+    "RelativePath": "api/Farmacy/GetAnimal/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetAnimals",
+    "RelativePath": "api/Farmacy/GetAnimals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.Animal, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetAVisit",
+    "RelativePath": "api/Farmacy/GetAVisit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.VetVisits, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetReports",
+    "RelativePath": "api/Farmacy/GetCounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.HealthCounts, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetExposedAnimals",
+    "RelativePath": "api/Farmacy/GetExposedAnimals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.Animal, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetFemaleAnimals",
+    "RelativePath": "api/Farmacy/GetFemaleAnimals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.Animal, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetHealthyAnimals",
+    "RelativePath": "api/Farmacy/GetHealthyAnimals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.Animal, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetHighRiskAnimals",
+    "RelativePath": "api/Farmacy/GetHighRiskAnimals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.Animal, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetMaleAnimals",
+    "RelativePath": "api/Farmacy/GetMaleAnimals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.Animal, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetMed",
+    "RelativePath": "api/Farmacy/GetMed/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetMedications",
+    "RelativePath": "api/Farmacy/GetMedications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.Medication, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetQuestionnaires",
+    "RelativePath": "api/Farmacy/GetQuestionnaires",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.Questionaire, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetsAnimal",
+    "RelativePath": "api/Farmacy/GetsAnimal",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetTask",
+    "RelativePath": "api/Farmacy/GetTask/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetTasks",
+    "RelativePath": "api/Farmacy/GetTasks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.Task, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetTodoList",
+    "RelativePath": "api/Farmacy/GetTodoList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetVisits",
+    "RelativePath": "api/Farmacy/GetVisits",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.Medication, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetWorker",
+    "RelativePath": "api/Farmacy/GetWorker/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "GetWorkers",
+    "RelativePath": "api/Farmacy/GetWorkers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FarmacyAPI.Models.User, FarmacyAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "LoginUser",
+    "RelativePath": "api/Farmacy/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "FarmacyAPI.Models.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "QuestionaireFunction",
+    "RelativePath": "api/Farmacy/questionaire",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quest",
+        "Type": "FarmacyAPI.Models.Questionaire",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/Farmacy/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "FarmacyAPI.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "RegisterAnimal",
+    "RelativePath": "api/Farmacy/RegisterAnimal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "animal",
+        "Type": "FarmacyAPI.Models.Animal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "RegisterAnimals",
+    "RelativePath": "api/Farmacy/RegisterAnimals",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "animal",
+        "Type": "FarmacyAPI.Models.Animal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "updateAnimalHealthStatus",
+    "RelativePath": "api/Farmacy/updateAnimalHealthStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "animal",
+        "Type": "FarmacyAPI.Models.Animals",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "updateAnimalHealthyStatus",
+    "RelativePath": "api/Farmacy/updateAnimalHealthyStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "animal",
+        "Type": "FarmacyAPI.Models.Animal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "UpdateTaskStatus",
+    "RelativePath": "api/Farmacy/updateTaskStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "task",
+        "Type": "FarmacyAPI.Models.TaskAllo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmacyAPI.Controllers.FarmacyController",
+    "Method": "UpdateTodoList",
+    "RelativePath": "api/Farmacy/UpdateTodoList",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "note",
+        "Type": "FarmacyAPI.Models.ToDoList",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
